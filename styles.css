@@ -1,0 +1,131 @@
+@font-face {
+  font-family: NorseBold;
+  src: url(Norse-Bold.otf);
+}
+:root {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.wholebody {
+  display: flex;
+  flex-direction: row;
+}
+.background-image {
+  background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 650px;
+  display: flex;
+  height: 1000px;
+}
+
+.odinlogo {
+  width: 100%;
+  text-align: center;
+  margin-top: 40%;
+  display: flex;
+  height: 140px;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 100px;
+}
+.odinlogo > span {
+  font-size: 4rem;
+  font-family: NorseBold;
+}
+.seconddiv {
+  font-size: 2rem;
+  padding-top: 220px;
+  background-color: rgb(235, 235, 235);
+  color: black;
+  width: calc(100vw - 650px);
+}
+.seconddiv > :first-child,
+.form-div,
+form > :last-child {
+  padding-left: 60px;
+}
+.seconddiv > :first-child > p {
+  margin: 0;
+  font-weight: 700;
+}
+form {
+  padding-top: 10px;
+}
+label {
+  display: block;
+  font-size: 12px;
+  color: #333333;
+  font-weight: 700;
+}
+.form-div {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding-bottom: 40px;
+  box-shadow: 0px 4px 8px rgb(176, 173, 173);
+  margin-bottom: 20px;
+}
+.do_it {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+input {
+  margin-bottom: 15px;
+  height: 30px;
+  width: 200px;
+}
+input:focus:valid {
+  border: solid #0000ff 1px;
+  width: 250px;
+}
+input:focus:invalid {
+  border-color: red;
+  width: 250px;
+}
+:focus {
+  /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 1); */
+
+  box-shadow: 4px 4px 6px rgb(176, 173, 173);
+
+  outline: 0;
+}
+
+#passwordNotSame {
+  font-size: 0.8rem;
+  color: red;
+}
+.submit-button {
+  color: white;
+  display: flex;
+  height: 50px;
+  background-color: #596d48;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.account {
+  margin-left: 60px;
+  font-size: 1.6rem;
+}
+
+.account > span {
+  color: #596d48;
+  font-weight: 700;
+}
